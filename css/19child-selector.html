@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        li {
+            background-color: gold;
+        }
+
+        ul > li {
+            text-decoration: line-through;
+        }
+        
+        ol > li {
+            font-size: 40px;
+        }
+        /* 자식 element를 selector로 선택하려면 ul > li 이런식으로 선택해야함 */
+    </style>
+</head>
+<body>
+    <!-- ul>li*3>lorem1^^ol>li*3>lorem1 -->
+    <ul>
+        <li>Lorem.</li>
+        <li>Nisi.</li>
+        <li>Commodi!</li>
+    </ul>
+    <ol>
+        <li>Lorem.</li>
+        <li>Voluptatum.</li>
+        <li>Labore!</li>
+    </ol>
+</body>
+</html>

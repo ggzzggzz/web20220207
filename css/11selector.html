@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        .note {
+            text-decoration: underline;
+        }
+
+        .error {
+            text-decoration: line-through;
+        }
+
+        #head3 {
+            font-size: 3em;
+        }
+
+        .note.error {
+            color: red;
+        }
+
+        p.note {
+            font-family: D2Coding, monospace;
+        }
+        /* 두개의 class를 가진것을 selector로 선택하려면 띄어쓰기 없이 .note.error로 selector를 표시하면 됨
+        또는 p element의 note class를 만족하는 것을 선택할 때에는 p.note로 selector를 표시하면 된다.
+        즉, 두개 이상의 selector를 선택하려면 띄어쓰기 없이 붙여서 selector로 선택하면됨 */
+    </style>
+</head>
+<body>
+    <!-- h1#head$.note*3>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Magnam, accusantium dolore!</h1>
+    <h1 id="head3" class="note">Delectus, repellendus fugiat.</h1>
+
+    <!-- h1#head$@4.error*3>lorem3 -->
+    <h1 id="head4" class="error">Lorem, ipsum dolor.</h1>
+    <h1 id="head5" class="error">Commodi, reiciendis culpa.</h1>
+    <h1 id="head6" class="error">Repudiandae, a debitis?</h1>
+
+    <!-- h1#head$@7.note.error*2>lorem3 -->
+    <h1 id="head7" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head8" class="note error">Natus, illo illum!</h1>
+
+    <!-- p.note*2>lorem -->
+    <p class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur expedita dolor qui, explicabo magni assumenda tempore laudantium nemo necessitatibus, molestias quibusdam officia laborum illo molestiae adipisci natus error, nihil architecto.</p>
+    <p class="note">Distinctio rerum repudiandae minima necessitatibus nemo, explicabo quos sequi voluptas, voluptatem magnam placeat aliquid pariatur officia tempore, quasi veritatis. Minima ipsam voluptate consequatur error repudiandae velit sit voluptatibus ipsum dolorem.</p>
+</body>
+</html>
