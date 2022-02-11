@@ -14,14 +14,22 @@
         .head1-left-container, .head1-right-container, .head2-left-container, .head2-right-container {
             display: flex;
         }
-        .head1-left-menu, .head1-right-menu {
-            padding: 15px;
-            font-size: 20px;
+        .head1-left-menu {
+            padding: 22px;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: -8px;
+            height: 28px;
+            width: auto;
         }
-        .head2-left-menu, .head2-right-menu {
-            padding: 12px 20px;
-            font-size: 15px;
-            color: white;
+        .head1-right-menu {
+            border-radius: 25px;
+            margin-top: 8px;
+            margin-right: 15px;
+            padding: 8px 16px;
+            font-size: 20px;
+            height: 30px;
+            width: auto;
         }
         #id1 {
             background-color: pink;
@@ -29,6 +37,12 @@
         #id2 {
             background-color: lightgreen;
         }
+        .head2-left-menu, .head2-right-menu {
+            padding: 12px 20px;
+            font-size: 17px;
+            color: white;
+        }
+
         .head1-left-menu:hover, .head1-right-menu:hover, #id1:hover, #id2:hover {
             background-color: green;
             color: white;
@@ -46,12 +60,17 @@
         }
 
         .side-menu-header {
-            font-size: 30px;
-            font-weight: bold;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+
+        .side-menu {
+            font-size: 15px;
         }
 
         .side-menu, .side-menu-header {
-            padding: 5px;
+            padding: 3px 40px 3px 10px;
         }
 
         .side-menu:hover {
@@ -65,7 +84,7 @@
 
         .main-content-container {
             flex: 1;
-            background-color: beige;
+            border-right: 1px solid gray;
         }
 
         .button-container {
@@ -74,6 +93,7 @@
         }
 
         button {
+            border-radius: 7px;
             font-size: 20px;
             background-color: green;
             color: white;
@@ -129,38 +149,39 @@
     <div class="body-container">
         <div class="side-menu-container">
             <!-- .side-menu*30>lorem1 -->
-            <div class="side-menu-header">Lorem.</div>
-            <div class="side-menu">Commodi!</div>
-            <div class="side-menu">Autem.</div>
-            <div class="side-menu">Quod.</div>
-            <div class="side-menu">Consectetur!</div>
-            <div class="side-menu">Inventore.</div>
-            <div class="side-menu">Beatae?</div>
-            <div class="side-menu">Ex!</div>
-            <div class="side-menu">Quisquam.</div>
-            <div class="side-menu">Sint.</div>
-            <div class="side-menu">Ea!</div>
-            <div class="side-menu">Quasi.</div>
-            <div class="side-menu">Id?</div>
-            <div class="side-menu">Libero?</div>
-            <div class="side-menu">Voluptatum!</div>
-            <div class="side-menu">Eos?</div>
-            <div class="side-menu">Veritatis.</div>
-            <div class="side-menu">Optio!</div>
-            <div class="side-menu">Natus.</div>
-            <div class="side-menu">Repellat.</div>
-            <div class="side-menu">Vitae?</div>
-            <div class="side-menu">Aspernatur.</div>
-            <div class="side-menu">Animi.</div>
-            <div class="side-menu">Dolor!</div>
-            <div class="side-menu">Omnis.</div>
-            <div class="side-menu">Aspernatur.</div>
-            <div class="side-menu">Incidunt.</div>
-            <div class="side-menu">Accusamus!</div>
-            <div class="side-menu">Amet?</div>
-            <div class="side-menu">Blanditiis.</div>
+            <div class="side-menu-header">CSS Tutorial</div>
+            <div class="side-menu">CSS HOME</div>
+            <div class="side-menu">CSS Introduction</div>
+            <div class="side-menu">CSS Syntax</div>
+            <div class="side-menu">CSS Selectors</div>
+            <div class="side-menu">CSS How To</div>
+            <div class="side-menu">CSS Comments</div>
+            <div class="side-menu">CSS Colors</div>
+            <div class="side-menu">CSS Backgrounds</div>
+            <div class="side-menu">CSS Borders</div>
+            <div class="side-menu">CSS Margins</div>
+            <div class="side-menu">CSS Padding</div>
+            <div class="side-menu">CSS Height/Width</div>
+            <div class="side-menu">CSS Box Model</div>
+            <div class="side-menu">CSS Outline</div>
+            <div class="side-menu">CSS Text</div>
+            <div class="side-menu">CSS Fonts</div>
+            <div class="side-menu">CSS Icons</div>
+            <div class="side-menu">CSS Links</div>
+            <div class="side-menu">CSS Lists</div>
+            <div class="side-menu">CSS Tables</div>
+            <div class="side-menu">CSS Display</div>
+            <div class="side-menu">CSS Max-width</div>
+            <div class="side-menu">CSS Position</div>
+            <div class="side-menu">CSS Z-index</div>
+            <div class="side-menu">CSS Overflow</div>
+            <div class="side-menu">CSS Float</div>
+            <div class="side-menu">CSS Inline-block</div>
+            <div class="side-menu">CSS Align</div>
+            <div class="side-menu">CSS Combinators</div>
         </div>
         <div class="main-content-container">
+            <h1>CSS Tutorial</h1>
             <div class="button-container">
                 <button>&lt;Home</button>
                 <button>Next&gt;</button>
