@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <style>
         .head1-container, .head2-container {
@@ -18,8 +19,8 @@
             font-size: 20px;
         }
         .head2-left-menu, .head2-right-menu {
-            padding: 15px;
-            font-size: 20px;
+            padding: 12px 20px;
+            font-size: 15px;
             color: white;
         }
         #id1 {
@@ -66,16 +67,29 @@
             flex: 1;
             background-color: beige;
         }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            margin: 10px 10px;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <!-- .head1-container>.head1-left-container>.head1-left-menu*5^.head1-right-container>.head1-right-menu*3 -->
     <div class="head1-container">
         <div class="head1-left-container">
-            <div class="head1-left-menu">W3Schools</div>
-            <div class="head1-left-menu">Tutorials▼</div>
-            <div class="head1-left-menu">References▼</div>
-            <div class="head1-left-menu">Exercises▼</div>
+            <div class="head1-left-home"><img style="width: 60px; height: 60px; margin-right: 10px;" src="W3Schools.png" alt=""></div>
+            <div class="head1-left-menu">Tutorials <i class="fa-solid fa-caret-down"></i></div>
+            <div class="head1-left-menu">References <i class="fa-solid fa-caret-down"></i></div>
+            <div class="head1-left-menu">Exercises <i class="fa-solid fa-caret-down"></i></div>
             <div class="head1-left-menu">Videos</div>
         </div>
         <div class="head1-right-container">
@@ -87,7 +101,7 @@
     <!-- .head2-container>.head2-left-container>.head2-left-menu*17^.head2-right-container>.head2-right-menu*3 -->
     <div class="head2-container">
         <div class="head2-left-container">
-            <div class="head2-left-menu">HOME</div>
+            <div class="head2-left-menu"><i class="fa-solid fa-house-chimney"></i></div>
             <div class="head2-left-menu">HTML</div>
             <div class="head2-left-menu">CSS</div>
             <div class="head2-left-menu">JAVASCRIPT</div>
@@ -106,9 +120,9 @@
             <div class="head2-left-menu">Kotlin</div>
         </div>
         <div class="head2-right-container">
-            <div class="head2-right-menu">Lorem.</div>
-            <div class="head2-right-menu">Error?</div>
-            <div class="head2-right-menu">Maiores.</div>
+            <div class="head2-right-menu"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <div class="head2-right-menu"><i class="fa-solid fa-earth-americas"></i></div>
+            <div class="head2-right-menu"><i class="fa-solid fa-magnifying-glass"></i></div>
         </div>
     </div>
     <!-- .body-container>.side-menu-container+.main-content-container+.ad-container -->
@@ -147,6 +161,10 @@
             <div class="side-menu">Blanditiis.</div>
         </div>
         <div class="main-content-container">
+            <div class="button-container">
+                <button>&lt;Home</button>
+                <button>Next&gt;</button>
+            </div>
             <!-- (h1>lorem3^p>lorem)*20 -->
             <h1>Lorem, ipsum dolor.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, error quibusdam similique repellat eos eveniet totam, soluta dicta, distinctio laudantium veritatis consequuntur veniam sequi non culpa a deleniti nisi aut.</p>
