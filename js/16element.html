@@ -9,31 +9,23 @@
     </style>
 </head>
 <body>
-    <!-- h1#head$*3>lorem3 -->
+    <!-- input#input1+h1#head1>lorem3 -->
+    <input type="text" id="input1"> <br>
+    <input type="text" id="input2">
     <h1 id="head1">
         Lorem, ipsum dolor.
     </h1>
-    <h1 id="head2">
-        Magnam, officiis ab!
-    </h1>
-    <h1 id="head3">
-        Cumque, sapiente blanditiis.
-    </h1>
-
-    <!-- #div1>h1>lorem1^p>lorem2 -->
-    <div id="div1">
-        <h1>
-            Lorem.
-        </h1>
-        <p>
-            Lorem, ipsum.
-        </p>
-    </div>
 
     <script>
-        document.getElementById("head1").innerHTML = "hello javascript";
-        document.getElementById("head2").innerHTML = "hi html";
-        document.getElementById("head3").innerHTML = "hello spring";
+        document.getElementById("input1").onkeyup = function() {
+            // console.log("키업!");
+            // console.log(document.getElementById("input1").value);
+            document.getElementById("head1").style.color = document.getElementById("input1").value;
+        }
+        document.getElementById("input2").onkeyup = function() {
+            document.getElementById("head1").style.backgroundColor = document.getElementById("input2").value;
+        }
+        
     </script>
 
 
